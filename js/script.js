@@ -5,17 +5,15 @@ var tweetLink = "https://twitter.com/intent/tweet?text=";
 var paragraph = document.getElementById("joke");
 var button = document.getElementById("random-joke");
 
-button.addEventListener("click", function() {
-  getJoke();
-});
-
 // Get quote function
 function getQuote() {
-  fetch(quoteUrl, {cache: "no-store"})
-    .then(function(resp) {
-      return resp.json();
-    })
-    .then(createTweet);
+  fetch(quoteUrl, {
+    cache: "no-store"
+  })
+  .then(function(resp) {
+    return resp.json();
+  })
+  .then(createTweet);
 }
 
 // Create tweet
@@ -31,6 +29,20 @@ function createTweet(input) {
   }
 
   var tweetText = "Quote of the day - " + quoteText + ". Author: " + quoteAuthor;
+
+  if (tweetText.length > 140) {
+    getQuote();
+  } else {
+    var tweet = tweetLink + encodeURIComponent(tweetText);
+    document.querySelector(".quote").innerText = quoteText;
+    document.querySelector(".author").innerText = "Author: " + quoteAuthor;
+    document.querySelector(".tweet").setAttribute("href", tweet);
+  }
 }
 
-window.onload = getJoke();
+document.addEventListener("DOMContentLoaded", function() {
+  getQuote();
+  document.querySelector(".trigger").addEventListener("click", function(){
+    getQuote();
+  });
+});
