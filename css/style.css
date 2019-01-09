@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: "Averia Serif Libre", cursive;
+  background-color: #71fff0;
+}
+
+.container {
+  width: 1200px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.write-joke {
+  margin: 50px;
+  font-size: 20px;
+}
+
+.joke-button {
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  font-family: "Averia Serif Libre", cursive;
+  background-color: #ffe435;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.joke-button:hover {
+  background-color: #f4bd27;
+}
+/*# sourceMappingURL=style.css.map */
