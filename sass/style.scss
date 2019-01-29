@@ -10,16 +10,12 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Averia Serif Libre", cursive;
-  background-image: url("../images/board.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #55ACEE;;
   position: relative;
 }
 
 main {
-  max-width: 900px;
+  max-width: 100%;
   height: auto;
   position: absolute;
   top: 50px;
@@ -72,5 +68,27 @@ h2, h3 {
       color: #ffffff;
       line-height: 30px;
     }
+  }
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 1199px) {
+  
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  h1, h2, h3 {
+    padding-left: 80px;
   }
 }
