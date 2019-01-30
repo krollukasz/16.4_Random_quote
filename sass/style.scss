@@ -6,29 +6,25 @@
 }
 
 body {
-  margin: 40px 0;
-  display: flex;
-  justify-content: center;
   font-family: "Averia Serif Libre", cursive;
-  background-color: #55ACEE;;
-  position: relative;
+  background-color: #55ACEE;
 }
 
-main {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50px;
-  left: 550px;
+.container {
+  margin: 0 auto;
+  padding-top: 15vh;
+  height: 100vh;
+  text-align: center;
 }
 
-h1 {
-  font-size: 40px;
+header {
   margin-bottom: 40px;
+  font-size: 30px;
 }
 
-h2, h3 {
+.quote, .author {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .buttons {
@@ -68,27 +64,5 @@ h2, h3 {
       color: #ffffff;
       line-height: 30px;
     }
-  }
-}
-
-/* MOBILE VERSION */
-
-@media (max-width: 1199px) {
-  
-  body {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  main {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-  }
-
-  h1, h2, h3 {
-    padding-left: 80px;
   }
 }
