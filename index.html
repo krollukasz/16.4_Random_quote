@@ -5,22 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random quote</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
 
   <body>
-    <section>
-      <div class="container">
+      <main class="container">
         <header>
-          <h1>Random joke</h1>
+          <h1>Random quote machine</h1>
         </header>
-        <div class="random-joke">
-          <p id="joke" class="write-joke"></p>
+
+        <div class="box">
+          <h2 class="quote"></h2>
+          <h3 class="author"></h3>
         </div>
 
-        <button id="random-joke" class="joke-button">Random joke</button>
-      </div>
-    </section>
+        <div class="buttons">
+          <button class="trigger btn"> Random quote </button>
+          <div class="btn tweet-button">
+            <a href="#" target="_blank" class="tweet">
+                <i class="fab fa-twitter"></i> 
+              Tweet 
+            </a>
+          </div>
+        </div>
+      </main>
+    
 
   <script src="js/script.js"></script>
   </body>

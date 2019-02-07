@@ -1,45 +1,71 @@
 @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700");
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 body {
-  margin: 40px 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   font-family: "Averia Serif Libre", cursive;
-  background-color: #71fff0;
+  background-color: #55ACEE;
 }
 
 .container {
-  width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
 }
 
-h1 {
-  font-size: 32px;
+header {
+  margin-bottom: 40px;
+  font-size: 30px;
 }
 
-.write-joke {
-  margin: 50px;
-  font-size: 20px;
+.quote, .author {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.joke-button {
-  width: 120px;
-  height: 30px;
-  font-size: 14px;
+.buttons {
+  margin-top: 50px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.buttons .btn {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 250px;
+  height: auto;
+  background-color: #55ACEE;
+  color: #ffffff;
   font-family: "Averia Serif Libre", cursive;
-  background-color: #ffe435;
-  color: #000;
-  border: none;
-  border-radius: 10px;
+  font-size: 30px;
+  border: 2px solid #0a89eb;
+  border-radius: 4px;
+  display: block;
   cursor: pointer;
-  transition: 0.7s;
 }
 
-.joke-button:hover {
-  background-color: #f4bd27;
+.buttons .tweet-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.buttons .tweet-button a .fa-twitter {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: #55ACEE;
+  color: #ffffff;
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */
