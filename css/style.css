@@ -11,8 +11,9 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 15vh;
-  height: 100vh;
+  width: 100%;
+  height: auto;
+  padding: 20px;
   text-align: center;
 }
 
@@ -27,8 +28,6 @@ header {
 }
 
 .buttons {
-  width: 100%;
-  height: auto;
   margin-top: 50px;
   text-align: center;
   display: -ms-flexbox;
@@ -43,9 +42,9 @@ header {
 
 .buttons .btn {
   margin-bottom: 15px;
-  padding: 10px 0;
-  width: 350px;
-  height: 60px;
+  padding: 10px;
+  width: 250px;
+  height: auto;
   background-color: #55ACEE;
   color: #ffffff;
   font-family: "Averia Serif Libre", cursive;
